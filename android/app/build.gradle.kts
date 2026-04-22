@@ -42,3 +42,9 @@ android {
 flutter {
     source = "../.."
 }
+
+configurations.all {
+    resolutionStrategy {
+        force("com.arthenica:ffmpeg-kit-full-gpl:5.1.LTS")
+    }
+}
